@@ -73,12 +73,6 @@
 		return input;
 	}
 	
-	if ([phrase length] > 56) {
-		LogToConsole(@"WARNING: Using a key length greater than 56 will result in that key itself being struncted to the first 56 characters.");
-
-		phrase = [phrase substringToIndex:56];
-	}
-
 	NSString *result = [BlowfishBase encrypt:input key:phrase mode:mode encoding:local];
 
 	if ([result length] <= 0) {
@@ -128,12 +122,6 @@
 		mode = CSFWBlowfishEncryptionECBModeOfOperation;
 	}
 	
-	if ([phrase length] > 56) {
-		LogToConsole(@"WARNING: Using a key length greater than 56 will result in that key itself being struncted to the first 56 characters.");
-
-		phrase = [phrase substringToIndex:56];
-	}
-
 	NSString *result = [BlowfishBase decrypt:input key:phrase mode:mode encoding:local badBytes:badByteCount];
 
 	if ([result length] <= 0) {
