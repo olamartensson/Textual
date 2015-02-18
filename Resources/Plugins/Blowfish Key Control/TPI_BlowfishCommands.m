@@ -189,10 +189,10 @@
 							
 							NSString *requestMsg = nil;
 							
-							if ([_messageString isEqualIgnoringCase:@"nocbc"]) {
-								requestMsg = [NSString stringWithFormat:@"%@%@", TXExchangeRequestPrefix, publicKey];
-							} else {
+							if ([_messageString isEqualIgnoringCase:@"cbc"]) {
 								requestMsg = [NSString stringWithFormat:@"%@%@ CBC", TXExchangeRequestPrefix, publicKey];
+							} else {
+								requestMsg = [NSString stringWithFormat:@"%@%@", TXExchangeRequestPrefix, publicKey];
 							}
 
 							[[self keyExchangeRequests] setObject:@[keyRequest, c] forKey:requestKey];
