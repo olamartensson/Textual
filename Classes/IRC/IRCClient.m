@@ -2228,6 +2228,7 @@
 
 			break;
 		}
+        case 5102: // Command: W
 		case 5080: // Command: WHOIS
 		{
 			NSString *nickname1 = [s getTokenAsString];
@@ -2572,6 +2573,7 @@
 
 			break;
 		}
+        case 5103: // Command: Q
 		case 5056: // Command: QUERY
 		{
 			NSString *nickname = [s getTokenAsString];

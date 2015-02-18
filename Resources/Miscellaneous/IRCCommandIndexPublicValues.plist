@@ -5,7 +5,7 @@
 	<key>Reserved Information</key>
 	<dict>
 		<key>Next Index Value</key>
-		<real>5102</real>
+		<integer>5104</integer>
 	</dict>
 	<key>adchat</key>
 	<dict>
@@ -601,6 +601,15 @@
 		<key>indexValue</key>
 		<integer>5055</integer>
 	</dict>
+	<key>q</key>
+	<dict>
+		<key>command</key>
+		<string>Q</string>
+		<key>developerModeOnly</key>
+		<false/>
+		<key>indexValue</key>
+		<integer>5103</integer>
+	</dict>
 	<key>query</key>
 	<dict>
 		<key>command</key>
@@ -843,6 +852,15 @@
 		<false/>
 		<key>indexValue</key>
 		<integer>5079</integer>
+	</dict>
+	<key>w</key>
+	<dict>
+		<key>command</key>
+		<string>W</string>
+		<key>developerModeOnly</key>
+		<false/>
+		<key>indexValue</key>
+		<integer>5102</integer>
 	</dict>
 	<key>whois</key>
 	<dict>
